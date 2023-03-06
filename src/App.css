@@ -1,0 +1,8 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  /* margin: 0 auto; */
+  text-align: center;
+}

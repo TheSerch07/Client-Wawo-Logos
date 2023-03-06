@@ -1,8 +1,8 @@
 .mainHeader {
     /* background-color: red; */
-    background: #333;
+    background: rgb(248, 248, 248);
 	color: white;
-	height: 100px;
+	height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
