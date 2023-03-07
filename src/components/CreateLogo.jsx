@@ -10,7 +10,8 @@ function CreateLogo() {
             <div>
                 <h1>Obtén el logo perfecto para tu empresa</h1>
                 <p>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA</p>
-                <input type="text" />
+                <input type="text" placeholder="Introduce el nombre de tu empresa"/>
+                <button>Quiero mi logo</button>
             </div>
         </div>
     )

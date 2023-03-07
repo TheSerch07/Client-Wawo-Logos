@@ -1,3 +1,8 @@
+@font-face {
+  font-family: OpenSauseOne;
+  src: url("./styles/OpenSauseOne/OpenSauceOne-Bold.ttf");
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -5,4 +10,5 @@
   max-width: auto;
   /* margin: 0 auto; */
   text-align: center;
+  font-family: OpenSauseOne;
 }
