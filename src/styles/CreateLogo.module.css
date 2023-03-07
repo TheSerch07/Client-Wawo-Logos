@@ -49,6 +49,10 @@
     border-radius: 2rem;
 }
 
+.input-wrapper {
+    font: optional;
+}
+
 /* .soonCreateLogo {
 
 } */
