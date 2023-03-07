@@ -1,3 +1,8 @@
+@font-face {
+    font-family: OpenSauseOneRegular;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
+}
+
 .mainCreateLogo {
     display: flex;
     margin-top: 110px;
@@ -7,6 +12,41 @@
     border-radius: 2rem;
     align-items: center;
     justify-content: space-around;
+}
+
+.title {
+    text-align: left;
+    font-size: 60px;
+}
+
+.parragrafh {
+    font-family: OpenSauseOneRegular;
+    text-align: left;
+    font-size: 22px;
+    padding-bottom: 3rem;
+}
+
+.input {
+    font-family: OpenSauseOneRegular;
+    background: rgb(248, 248, 248);
+    padding-left: 30px;
+    font-size: 18px;
+    border-top: 20px;
+    height: 60px;
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.button {
+    font-family: OpenSauseOneRegular;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 1);
+    /* padding-left: 30px; */
+    font-size: 18px;
+    border-top: 20px;
+    height: 60px;
+    width: 18rem;
+    border-radius: 2rem;
 }
 
 /* .soonCreateLogo {
