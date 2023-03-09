@@ -1,7 +1,9 @@
+import styles from "../styles/Tutorial.module.css"
+
 function Tutorial() {
     return (
-        <div>
-            <h1>¿Cómo funciona?</h1>
+        <div className={styles.mainTutorial}>
+            <h1 className={styles.title}>¿Cómo funciona?</h1>
         </div>
     )
 }
