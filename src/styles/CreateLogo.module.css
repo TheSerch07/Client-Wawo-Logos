@@ -41,18 +41,15 @@
     font-family: OpenSauseOneRegular;
     background: rgb(17, 17, 17);
     color: rgb(255, 255, 1);
-    /* padding-left: 30px; */
     font-size: 18px;
     border-top: 20px;
-    height: 60px;
+    height: 65px;
     width: 18rem;
     border-radius: 2rem;
+    position: relative;
+    left: -7rem;
 }
 
-.input-wrapper {
-    font: optional;
+.button:hover {
+    cursor: pointer;
 }
-
-/* .soonCreateLogo {
-
-} */
