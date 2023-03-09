@@ -10,7 +10,7 @@ function Tutorial() {
                     <div className={styles.contentH2}>
                         <h2>1.</h2>
                     </div>
-                    <h2>Ingresa la información<br></br>de tu empresa</h2>
+                    <h2 className={styles.h2}>Ingresa la información<br></br>de tu empresa</h2>
                     <p className={styles.p}>Cuéntamos qué haces, cómo se llama<br></br>tu empresa, si tienes un eslogan y las<br></br>palabras que mejor la describan.</p>
                 </div>
                 <div>
