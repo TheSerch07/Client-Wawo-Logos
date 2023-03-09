@@ -1,7 +1,51 @@
+@font-face {
+    font-family: OpenSauseOneRegular;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
+}
+
 .mainTutorial {
     margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.childTutorial {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(233, 233, 233);
+    height: 29rem;
+    width: 58rem;
+    border-radius: 25px;
 }
 
 .title {
     font-size: 60px;
+}
+
+.contentH2 {
+    font-size: 23px;
+    color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    background-color: rgb(17, 17, 17);
+}
+
+.mainText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 23rem;
+    height: 20rem;
+    font-size: 18px;
+}
+
+.p {
+    font-family: OpenSauseOneRegular
 }
