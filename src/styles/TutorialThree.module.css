@@ -4,7 +4,7 @@
 }
 
 .mainTutorial {
-    margin-top: 8rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(17, 17, 17);
     height: 29rem;
     width: 58rem;
     border-radius: 25px;
@@ -27,19 +27,20 @@
 
 .contentH2 {
     font-size: 1.4rem;
-    color: rgb(233, 233, 233);
+    color: rgb(17, 17, 17);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 4rem;
     height: 4rem;
     border-radius: 50px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(248, 248, 248);
 }
 
 .h2 {
     font-size: 1.78rem;
     margin-bottom: 0px;
+    color: rgb(248, 248, 248);
 }
 
 .mainText {
@@ -56,4 +57,5 @@
     font-family: OpenSauseOneRegular;
     line-height: 1.6rem;
     margin-top: 0px;
+    color: rgb(248, 248, 248);
 }
