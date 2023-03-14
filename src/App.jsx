@@ -6,9 +6,9 @@ import CreateLogo from './components/CreateLogo'
 import Tutorial from './components/Tutorial'
 import TutorialTwo from './components/TutorialTwo'
 import TutorialThree from './components/TutorialThree'
+import Examples from './components/Examples'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
       <Tutorial />
       <TutorialTwo />
       <TutorialThree />
+      <Examples />
     </div>
   )
 }
