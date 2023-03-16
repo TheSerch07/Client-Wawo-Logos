@@ -20,6 +20,7 @@ function App() {
       <TutorialThree />
       <Examples />
       <Obtains />
+      <CallToAction />
     </div>
   )
 }
