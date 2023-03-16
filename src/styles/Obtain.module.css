@@ -1,3 +1,8 @@
+@font-face {
+    font-family: OpenSauseOneRegular;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
+}
+
 .mainObtain {
     display: flex;
     flex-direction: column;
@@ -17,4 +22,9 @@
     width: 7rem;
     border-radius: 2rem;
     border: 1px solid black;
+}
+
+.p {
+    font-family: OpenSauseOneRegular;
+    font-size: 18px;
 }
