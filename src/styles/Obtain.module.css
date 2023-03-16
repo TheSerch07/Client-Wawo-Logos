@@ -8,16 +8,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: rgb(233, 233, 233);
     height: 28rem;
-    width: 18rem;
+    width: 20rem;
 }
 
 .divPrice {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(248, 248, 248);
     height: 2.5rem;
     width: 7rem;
     border-radius: 2rem;
@@ -27,4 +27,8 @@
 .p {
     font-family: OpenSauseOneRegular;
     font-size: 18px;
+}
+
+.img {
+    max-width: 13rem;
 }

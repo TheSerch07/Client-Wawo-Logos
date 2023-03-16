@@ -6,7 +6,7 @@
     background-color: rgb(233, 233, 233);
     border-radius: 2rem;
     width: 110rem;
-    height: 85rem;
+    height: 90rem;
 }
 
 .title {
@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: blueviolet;
+    background-color: rgb(233, 233, 233);
     height: 33rem;
     width: 100rem;
 }
