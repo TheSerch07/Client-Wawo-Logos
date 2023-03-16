@@ -1,0 +1,20 @@
+.mainObtain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    height: 28rem;
+    width: 18rem;
+}
+
+.divPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
