@@ -1,0 +1,26 @@
+@font-face {
+    font-family: OpenSauseOneRegular;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
+}
+
+.mainFooter {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+}
+
+.img {
+    transform: scale(1.1);
+}
+
+.p {
+    font-family: OpenSauseOneRegular;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
