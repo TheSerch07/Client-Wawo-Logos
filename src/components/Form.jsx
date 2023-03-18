@@ -6,8 +6,10 @@ function Form() {
     const [form, useForm] = useState()
     
     return (
-        <form>
+        <div>
             <input type="text" />
-        </form>
+        </div>
     )
 }
+
+export default Form
