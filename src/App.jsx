@@ -1,28 +1,17 @@
-import './App.css'
-import Header from './components/Header';
-import CreateLogo from './components/CreateLogo';
-import Tutorial from './components/Tutorial';
-import TutorialTwo from './components/TutorialTwo';
-import TutorialThree from './components/TutorialThree';
-import Examples from './components/Examples';
-import Obtains from './components/Obtains';
-import CallToAction from './components/CallToAction';
-import Footer from './components/Footer';
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './components/Home';
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <CreateLogo />
-      <Tutorial />
-      <TutorialTwo />
-      <TutorialThree />
-      <Examples />
-      <Obtains />
-      <CallToAction />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+      </div>
+    </Router>
   )
 }
 
