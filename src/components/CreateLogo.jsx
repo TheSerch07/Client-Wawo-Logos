@@ -1,5 +1,6 @@
-import styles from "../styles/CreateLogo.module.css"
-import ilustracion from "../assets/Ilustracion1.svg"
+import { Link } from "react-router-dom";
+import styles from "../styles/CreateLogo.module.css";
+import ilustracion from "../assets/Ilustracion1.svg";
 
 function CreateLogo() {
     return (
@@ -12,7 +13,9 @@ function CreateLogo() {
                 <p className={styles.parragrafh}>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA.</p>
                 <div>
                     <input className={styles.input} type="text" placeholder="Introduce el nombre de tu empresa"/>
-                    <button className={styles.button}>Quiero mi logo</button>
+                    <Link to="/logo">
+                        <button className={styles.button}>Quiero mi logo</button>
+                    </Link>
                 </div>
             </div>
         </div>

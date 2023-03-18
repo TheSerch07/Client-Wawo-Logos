@@ -1,4 +1,5 @@
-import styles from '../styles/CallToAction.module.css'
+import { Link } from 'react-router-dom';
+import styles from '../styles/CallToAction.module.css';
 
 function CallToAction() {
     return (
@@ -8,7 +9,9 @@ function CallToAction() {
             </div>   
             <div className={styles.divButton}>
                 <input className={styles.input} type="text" placeholder="Introduce el nombre de tu empresa"/>
-                <button className={styles.button}>Quiero mi logo</button>
+                <Link to="/logo">
+                    <button className={styles.button}>Quiero mi logo</button>
+                </Link>
             </div>
         </div>
     )

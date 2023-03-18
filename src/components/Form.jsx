@@ -1,5 +1,4 @@
-import { useState } from ("react")
-
+import { useState } from "react";
 
 function Form() {
     
@@ -7,7 +6,9 @@ function Form() {
     
     return (
         <div>
-            <input type="text" />
+            <form>
+                <input type="text" />
+            </form>
         </div>
     )
 }
