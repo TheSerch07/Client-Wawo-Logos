@@ -4,11 +4,18 @@ import Header from "./Header";
 
 function Forms() {
     
-    const [form, useForm] = useState()
+    const [form, useForm] = useState({
+        nombreEmpresa: "",
+        cuentanosMas: "",
+        palabras: "", 
+        eslogan: "", 
+        estilos: "",
+        correo: ""
+    });
     
     return (
         <div>
-            <Header />
+            <Header useStyle={false}/>
             <Form/>
         </div>
     )

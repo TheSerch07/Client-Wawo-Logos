@@ -7,8 +7,22 @@
     justify-content: center;
     align-items: center;
 	z-index: 1;
-	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	width: 100vw; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.mainHeaderTwo {
+	background: #E1FF01;
+	color: white;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	width: 100vw; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; 
 }

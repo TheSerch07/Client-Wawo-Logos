@@ -11,7 +11,7 @@ import Footer from './Footer';
 function Home() {
     return (
         <div>
-            <Header />
+            <Header useStyle={true}/>
             <CreateLogo />
             <Tutorial />
             <TutorialTwo />
