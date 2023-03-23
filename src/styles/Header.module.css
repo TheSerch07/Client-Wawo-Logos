@@ -14,6 +14,7 @@
 }
 
 .mainHeaderTwo {
+	/* margin-top: -8px; */
 	background: #E1FF01;
 	color: white;
 	height: 120px;
@@ -24,5 +25,5 @@
 	width: 100vw; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: fixed; 
+	/* position: fixed;  */
 }

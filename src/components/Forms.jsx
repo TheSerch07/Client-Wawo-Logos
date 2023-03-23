@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 import Header from "./Header";
+import styles from "../styles/Forms.module.css"
 
 function Forms() {
     
@@ -14,7 +15,7 @@ function Forms() {
     });
     
     return (
-        <div>
+        <div className={styles.mainForms}>
             <Header useStyle={false}/>
             <Form/>
         </div>
