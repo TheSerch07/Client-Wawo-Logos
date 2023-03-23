@@ -15,9 +15,11 @@ function Forms() {
     });
     
     return (
-        <div className={styles.mainForms}>
+        <div>
             <Header useStyle={false}/>
+            <div className={styles.mainForms}>
             <Form/>
+            </div>
         </div>
     )
 }
