@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Form from "./Form";
 import Header from "./Header";
 import styles from "../styles/Forms.module.css"
 import { useNavigate } from "react-router-dom";
 
-function Forms() {
+function Forms( {nombreEmpresa}) {
+    
     const navigate = useNavigate()
-    const [form, useForm] = useState({
+    const [form, setForm] = useState({
         nombreEmpresa: "",
         cuentanosMas: "",
         palabras: "", 
@@ -16,6 +17,15 @@ function Forms() {
     });
     
     const [component, setComponent] = useState(1);
+
+    // useEffect(() => {
+    //     setForm({
+    //         ...form,
+    //         nombreEmpresa: nombreEmpresa
+    //     });
+    //   }, [nombreEmpresaset]);
+
+    console.log(form, "elform poderoso")
 
     function componenteAnterior(component) {
         if (component === 1) {
@@ -28,6 +38,8 @@ function Forms() {
     function componenteSiguiente(component) {
         setComponent(component + 1)
     }
+
+
 
     console.log(component, "que no se rompa xd")
     return (
