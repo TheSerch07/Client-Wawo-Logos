@@ -2,8 +2,12 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import Forms from './components/Forms';
+import { useSelector } from 'react-redux';
 
 function App() {
+  
+  const formRedux = useSelector((state) => state.form)
+  console.log(formRedux, "Funciona el estado?")
 
   return (
     <Router>
