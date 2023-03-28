@@ -3,6 +3,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import styles from "../styles/Form.module.css";
 
 function Form({ componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
+    
     return(
         <div className={styles.mainForm}>
             <div className={styles.childForm}>
