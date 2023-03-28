@@ -3,12 +3,16 @@ import Form from "./Form";
 import Header from "./Header";
 import styles from "../styles/Forms.module.css"
 import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
-function Forms( {nombreEmpresa}) {
+function Forms() {
+
+    const formRedux = useSelector((state) => state.form)
+    console.log(formRedux, "Funciona el estado (componente form)?")
+
     
     const navigate = useNavigate()
     const [form, setForm] = useState({
-        nombreEmpresa: "",
         cuentanosMas: "",
         palabras: "", 
         eslogan: "", 
@@ -17,13 +21,6 @@ function Forms( {nombreEmpresa}) {
     });
     
     const [component, setComponent] = useState(1);
-
-    // useEffect(() => {
-    //     setForm({
-    //         ...form,
-    //         nombreEmpresa: nombreEmpresa
-    //     });
-    //   }, [nombreEmpresaset]);
 
     console.log(form, "elform poderoso")
 

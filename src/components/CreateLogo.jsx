@@ -1,13 +1,23 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "../styles/CreateLogo.module.css";
 import ilustracion from "../assets/Ilustracion1.svg";
 import { useState } from "react";
+import { setCompanyName } from "../features/form/formSlice";
+import { useDispatch } from "react-redux";
 
 function CreateLogo() {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [nombreEmpresa, setNombreEmpresa] = useState("")
 
     function handleInputChange(e) {
         setNombreEmpresa(e.target.value)
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        dispatch(setCompanyName(nombreEmpresa))
+        navigate("/logo")
     }
     
     console.log(nombreEmpresa)
@@ -21,9 +31,7 @@ function CreateLogo() {
                 <p className={styles.parragrafh}>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA.</p>
                 <div>
                     <input onChange={handleInputChange} className={styles.input} value={nombreEmpresa} name="name" type="text" placeholder="Introduce el nombre de tu empresa"/>
-                    <Link to="/logo">
-                        <button className={styles.button}>Quiero mi logo</button>
-                    </Link>
+                    <button onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
                 </div>
             </div>
         </div>

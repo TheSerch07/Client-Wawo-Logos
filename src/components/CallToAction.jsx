@@ -1,16 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/CallToAction.module.css';
-// useState
+import { setCompanyName } from "../features/form/formSlice";
+import { useDispatch } from "react-redux";
 
 function CallToAction() {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [nombreEmpresa, setNombreEmpresa] = useState("")
 
     function handleInputChange(e) {
         setNombreEmpresa(e.target.value)
     }
-    
-    console.log(nombreEmpresa)
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        dispatch(setCompanyName(nombreEmpresa))
+        navigate("/logo")
+    }
 
     return (
         <div className={styles.mainCallToAction}>
@@ -19,9 +27,7 @@ function CallToAction() {
             </div>   
             <div className={styles.divButton}>
                 <input onChange={handleInputChange} className={styles.input} type="text" placeholder="Introduce el nombre de tu empresa"/>
-                <Link to="/logo">
-                    <button className={styles.button}>Quiero mi logo</button>
-                </Link>
+                <button onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
             </div>
         </div>
     )

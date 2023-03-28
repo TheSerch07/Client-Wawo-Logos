@@ -13,13 +13,13 @@ export const formSlice = createSlice({
     name: "form",
     initialState,
     reducers: {
-        nombreEmpresa: (state, action) => {
+        setCompanyName: (state, action) => {
             // ...state,
             state.nombreEmpresa = action.payload
         }
     }
 })
 
-export const { nombreEmpresa } = formSlice.actions
+export const { setCompanyName } = formSlice.actions
 
 export default formSlice.reducer
