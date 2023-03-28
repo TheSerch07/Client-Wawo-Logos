@@ -7,12 +7,11 @@ import Examples from './Examples';
 import Obtains from './Obtains';
 import CallToAction from './CallToAction';
 import Footer from './Footer';
-// import { useHistory } from "react-router-dom";
-function Home() {
+import styles from "../styles/Home.module.css"
 
-    // console.log({"loquetrae": useHistory})
+function Home() {
     return (
-        <div>
+        <div className={styles.mainHome}>
             <Header useStyle={true}/>
             <CreateLogo />
             <Tutorial />

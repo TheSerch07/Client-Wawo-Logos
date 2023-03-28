@@ -11,7 +11,7 @@ import logosPrometeo from "../assets/Logos-Prometo-1.jpg"
 import { useNavigate } from "react-router-dom";
 import { setClean } from "../features/form/formSlice";
 
-function Form({ submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
+function Form({buttonText, submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
     const formRedux = useSelector((state) => state.form)
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -55,7 +55,7 @@ function Form({ submit, action, componenteAnterior, componenteSiguiente, titulo,
                 console.log(error);
             });
             // dispatch(setClean())
-            navigate("/")
+            navigate("/formFinished")
         } else {
             dispatch(action(form))
             componenteSiguiente()
@@ -116,7 +116,7 @@ function Form({ submit, action, componenteAnterior, componenteSiguiente, titulo,
                             </div>
                         </div>
                 }
-                <button onClick={handleSubmit} className={styles.buttonTwo}>Siguiente paso <BiRightArrowAlt size={30}/> </button>
+                <button disabled={form === ""} onClick={handleSubmit} className={styles.buttonTwo}>{buttonText} <BiRightArrowAlt size={30}/> </button>
             </div>
         </div>
     )

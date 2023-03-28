@@ -26,7 +26,7 @@ function CallToAction() {
             </div>   
             <div className={styles.divButton}>
                 <input onChange={handleInputChange} className={styles.input} type="text" placeholder="Introduce el nombre de tu empresa"/>
-                <button onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
+                <button disabled={nombreEmpresa === ""} onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
             </div>
         </div>
     )

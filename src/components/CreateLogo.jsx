@@ -31,7 +31,7 @@ function CreateLogo() {
                 <p className={styles.parragrafh}>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA.</p>
                 <div>
                     <input onChange={handleInputChange} className={styles.input} value={nombreEmpresa} name="name" type="text" placeholder="Introduce el nombre de tu empresa"/>
-                    <button onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
+                    <button disabled={nombreEmpresa === ""} onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
                 </div>
             </div>
         </div>

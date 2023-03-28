@@ -1,0 +1,75 @@
+@font-face {
+    font-family: OpenSauseOneRegular;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
+}
+
+.mainEnd {
+    display: flex;
+    margin-top: 120px;
+    background-color: rgb(225, 255, 1);
+    /* width: 110rem; */
+    width: 91.5vw;
+    height: 48rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.p {
+    font-family: OpenSauseOneRegular;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.childEnd {
+    width: 50vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.childEndTwo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    max-width: 16vw;
+}
+
+.h1 {
+    margin-top: 3vw;
+    margin-bottom: 0;
+    font-size: 50px
+}
+
+.contentP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    color: #E1FF01;;
+    font-family: OpenSauseOneRegular;
+    font-size: 20px;
+    width: 28rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border-color: transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+}
