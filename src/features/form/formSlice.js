@@ -19,10 +19,22 @@ export const formSlice = createSlice({
         },
         setDescription: (state, action) => {
             state.cuentanosMas = action.payload
+        }, 
+        setWords: (state, action) => {
+            state.palabras = action.payload
+        },
+        setSlogan: (state, action) => {
+            state.eslogan = action.payload
+        },
+        setStyles: (state, action) => {
+            state.estilos = action.payload
+        },
+        setEmail: (state, action) => {
+            state.correo = action.payload
         }
     }
 })
 
-export const { setCompanyName, setDescription } = formSlice.actions
+export const { setCompanyName, setDescription, setWords, setSlogan, setStyles, setEmail } = formSlice.actions
 
 export default formSlice.reducer
