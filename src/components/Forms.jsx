@@ -29,11 +29,11 @@ function Forms() {
         <div>
             <Header useStyle={false}/>
             <div className={styles.mainForms}>
-                {component === 1 && (<Form action={setDescription} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Cuéntanos más" parrafo="Queremos conocer tu empresa. Cuéntanos de qué se trata, cual es su razón de ser y qué productos o servicios ofrece." placeholder="Cuéntanos más de tu empresa"/>)}
-                {component === 2 && (<Form action={setWords} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Escribe 5 palabras clave" parrafo="Escribe las 5 palabras que mejor describan tu empresa." placeholder="Ingresa tus palabras clave"/>)}
-                {component === 3 && (<Form action={setSlogan} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa un eslogan" parrafo="Escribe una corta y llamativa frase para incorporar en tu logo." placeholder="Introduce tu eslogan (Opcional)"/>)}
-                {component === 4 && (<Form action={setStyles} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Selecciona un estilo de logo"  />)}
-                {component === 5 && (<Form action={setEmail} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa tu correo" parrafo="Para poder enviarte tus diseños 100% personalizados." placeholder="Ingresa tu correo"/>)}
+                {component === 1 && (<Form submit={false} action={setDescription} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Cuéntanos más" parrafo="Queremos conocer tu empresa. Cuéntanos de qué se trata, cual es su razón de ser y qué productos o servicios ofrece." placeholder="Cuéntanos más de tu empresa"/>)}
+                {component === 2 && (<Form submit={false} action={setWords} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Escribe 5 palabras clave" parrafo="Escribe las 5 palabras que mejor describan tu empresa." placeholder="Ingresa tus palabras clave"/>)}
+                {component === 3 && (<Form submit={false} action={setSlogan} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa un eslogan" parrafo="Escribe una corta y llamativa frase para incorporar en tu logo." placeholder="Introduce tu eslogan (Opcional)"/>)}
+                {component === 4 && (<Form submit={false} action={setStyles} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Selecciona un estilo de logo"  />)}
+                {component === 5 && (<Form submit={true} action={setEmail} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa tu correo" parrafo="Para poder enviarte tus diseños 100% personalizados." placeholder="Ingresa tu correo"/>)}
             </div>
         </div>
     )

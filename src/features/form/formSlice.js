@@ -31,10 +31,18 @@ export const formSlice = createSlice({
         },
         setEmail: (state, action) => {
             state.correo = action.payload
+        },
+        setClean: (state, action) => {
+            state.nombreEmpresa = "",
+            state.cuentanosMas = "",
+            state.palabras = "",
+            state.eslogan = "",
+            state.estilos = "",
+            state.correo = ""
         }
     }
 })
 
-export const { setCompanyName, setDescription, setWords, setSlogan, setStyles, setEmail } = formSlice.actions
+export const { setCompanyName, setDescription, setWords, setSlogan, setStyles, setEmail, setClean } = formSlice.actions
 
 export default formSlice.reducer

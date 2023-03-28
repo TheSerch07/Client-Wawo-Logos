@@ -2,16 +2,19 @@ import { useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
 import styles from "../styles/Form.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import logosAbogadosMontes from "../assets/Logos-Abogados-Montes-1.jpg";
 import logosGaleriaBalance from "../assets/Logos-Galería-Balance-1.jpg";
 import logosAstraComics from "../assets/Logos-Astra-1.jpg";
 import logosCantoraViche from "../assets/Cantora-V1-03.jpg";
 import logosPrometeo from "../assets/Logos-Prometo-1.jpg"
+import { useNavigate } from "react-router-dom";
+import { setClean } from "../features/form/formSlice";
 
-function Form({ action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
-    
+function Form({ submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
+    const formRedux = useSelector((state) => state.form)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     // console.log(action("holi"), "llego la action?")
     const [form, setForm] = useState("")
 
@@ -25,8 +28,38 @@ function Form({ action, componenteAnterior, componenteSiguiente, titulo, parrafo
 
     function handleSubmit(e) {
         e.preventDefault()
-        dispatch(action(form))
-        componenteSiguiente()
+        if (submit) {
+            dispatch(action(form))
+            fetch("https://sheet.best/api/sheets/6c0dc22f-110d-4949-999d-c468611090f1", {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nombreEmpresa: formRedux.nombreEmpresa,
+                cuentanosMas: formRedux.cuentanosMas,
+                palabras: formRedux.palabras,
+                eslogan: formRedux.eslogan,
+                estilos: formRedux.estilos,
+                correo: form
+            }),
+            })
+            .then((r) => r.json())
+            .then((data) => {
+                // The response comes here
+                console.log(data);
+            })
+            .catch((error) => {
+                // Errors are reported there
+                console.log(error);
+            });
+            // dispatch(setClean())
+            navigate("/")
+        } else {
+            dispatch(action(form))
+            componenteSiguiente()
+        }
     }
 
     return(
