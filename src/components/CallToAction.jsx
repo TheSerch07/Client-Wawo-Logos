@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import styles from '../styles/CallToAction.module.css';
 import { setCompanyName } from "../features/form/formSlice";
 import { useDispatch } from "react-redux";

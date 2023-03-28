@@ -4,7 +4,6 @@ import logo from "../assets/Logo.svg"
 function Header({ useStyle }) {
 
 	const classes = useStyle ? styles.mainHeader : styles.mainHeaderTwo;
-	console.log(classes)
 
 	return (
         <header className={classes}>
