@@ -8,21 +8,9 @@ import { useSelector } from 'react-redux';
 function Forms() {
 
     const formRedux = useSelector((state) => state.form)
-    console.log(formRedux, "Funciona el estado (componente form)?")
-
-    
     const navigate = useNavigate()
-    const [form, setForm] = useState({
-        cuentanosMas: "",
-        palabras: "", 
-        eslogan: "", 
-        estilos: "",
-        correo: ""
-    });
-    
     const [component, setComponent] = useState(1);
-
-    console.log(form, "elform poderoso")
+    console.log(formRedux, "Funciona el estado (componente form)?")
 
     function componenteAnterior(component) {
         if (component === 1) {
@@ -36,9 +24,6 @@ function Forms() {
         setComponent(component + 1)
     }
 
-
-
-    console.log(component, "que no se rompa xd")
     return (
         <div>
             <Header useStyle={false}/>
