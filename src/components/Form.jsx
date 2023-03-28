@@ -47,35 +47,35 @@ function Form({ action, componenteAnterior, componenteSiguiente, titulo, parrafo
                             <div className={styles.contentImg}>
                                 <div className={styles.eachChild}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="minimalista"/>
-                                    <label for="minimalista">
+                                    <label htmlFor="minimalista">
                                         <img className={styles.img} src={logosAbogadosMontes} alt="LogoMinimalista"/>
                                         <p>Minimalista</p>
                                     </label>
                                 </div >
                                 <div className={styles.eachChild}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="geometrico"/>
-                                    <label for="geometrico">
+                                    <label htmlFor="geometrico">
                                         <img className={styles.img} src={logosGaleriaBalance} alt="LogoGeometrico"/>
                                         <p>Geométrico</p>
                                     </label>
                                 </div>
                                 <div className={styles.eachChild}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="futurista"/>
-                                    <label for="futurista">
+                                    <label htmlFor="futurista">
                                         <img className={styles.img} src={logosAstraComics} alt="LogoFuturista"/>
                                         <p>Futurista</p>
                                     </label>
                                 </div>
                                 <div className={styles.eachChild}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="emblema"/>
-                                    <label for="emblema">
+                                    <label htmlFor="emblema">
                                         <img className={styles.img} src={logosCantoraViche} alt="LogoEmblema"/>
                                         <p>Emblema</p>
                                     </label>
                                 </div>
                                 <div className={styles.eachChild}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="moderno"/>
-                                    <label for="moderno">
+                                    <label htmlFor="moderno">
                                         <img className={styles.img} src={logosPrometeo} alt="LogoModerno"/>
                                         <p>Moderno</p>
                                     </label>

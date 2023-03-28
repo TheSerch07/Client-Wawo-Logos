@@ -33,6 +33,7 @@ function Forms() {
                 {component === 2 && (<Form action={setWords} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Escribe 5 palabras clave" parrafo="Escribe las 5 palabras que mejor describan tu empresa." placeholder="Ingresa tus palabras clave"/>)}
                 {component === 3 && (<Form action={setSlogan} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa un eslogan" parrafo="Escribe una corta y llamativa frase para incorporar en tu logo." placeholder="Introduce tu eslogan (Opcional)"/>)}
                 {component === 4 && (<Form action={setStyles} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Selecciona un estilo de logo"  />)}
+                {component === 5 && (<Form action={setEmail} componenteAnterior={() => componenteAnterior(component)} componenteSiguiente={() => componenteSiguiente(component)} titulo="Ingresa tu correo" parrafo="Para poder enviarte tus diseños 100% personalizados." placeholder="Ingresa tu correo"/>)}
             </div>
         </div>
     )
