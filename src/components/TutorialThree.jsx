@@ -10,10 +10,10 @@ function TutorialThree() {
                         <h2>3.</h2>
                     </div>
                     <h2 className={styles.h2}>Obten editables y<br></br>versión en alta calidad</h2>
-                    <p className={styles.p}>Si te gusta alguno de los 4 diseños<br></br>de logo, puedes comprar sus<br></br>editables y versión en alta calidad.</p>
+                    <p className={styles.p}>Si te gusta alguno de los 4 diseños de logo, puedes comprar sus editables y versión en alta calidad.</p>
                 </div>
                 <div>
-                    <img src={PasoTres} alt="Paso1"/>
+                    <img className={styles.img} src={PasoTres} alt="Paso1"/>
                 </div>
             </div>
         </div>

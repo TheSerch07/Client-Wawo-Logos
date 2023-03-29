@@ -48,7 +48,7 @@
     text-align: left;
     flex-direction: column;
     justify-content: space-around;
-    width: 23rem;
+    width: 22rem;
     height: 20rem;
     font-size: 18px;
 }
@@ -60,12 +60,58 @@
 }
 
 @media (max-width: 1360px) {
+    .mainTutorial {
+        margin-top: 3rem;
+    }
+
     .childTutorial {
+        flex-direction: column-reverse;
+        align-items: flex-start;
         /* width: 58rem; */
-        width: 88vw;
+        padding-left: 2rem;
+        width: 80.3vw;
+        position: relative;
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    .img {
+        margin-top: 2rem;
+        /* position: absolute; */
+        max-width: 12rem;
+        /* : -20px */
+    }
+
+    .contentH2 {
+        position: absolute;
+        left: 72vw;
+        top: 1.5rem;
+        font-size: 1.1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mainText {
+        width: 70vw;
+        justify-content: center;
+        /* height: 1rem; */
+        /* text-align: center;s */
+    }
+
+    .p {
+        font-size: 14px;
+
+        margin-top: 15px;
+    }
+
+    .contentImg {
+        display: flex;
+        width: 70vw;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
     }
 }
