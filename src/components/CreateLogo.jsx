@@ -23,13 +23,15 @@ function CreateLogo() {
     console.log(nombreEmpresa)
     return (
         <div className={styles.mainCreateLogo}>
-            <div className="a"> 
-                <img src={ilustracion} alt="Ilustración1"/>
+            <div> 
+                <img className={styles.img} src={ilustracion} alt="Ilustración1"/>
             </div>
-            <div>
-                <h1 className={styles.title}>Obtén el logo perfecto <br></br>para tu empresa</h1>
-                <p className={styles.parragrafh}>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA.</p>
-                <div>
+            <div className={styles.mainTextButton}>
+                <div className={styles.mainText}>
+                    <h1 className={styles.title}>Obtén el logo perfecto para tu empresa</h1>
+                    <p className={styles.parragrafh}>Ahorra tiempo y dinero con nuestra plataforma impulsada por IA.</p>
+                </div>
+                <div className={styles.containInput}>
                     <input onChange={handleInputChange} className={styles.input} value={nombreEmpresa} name="name" type="text" placeholder="Introduce el nombre de tu empresa"/>
                     <button disabled={nombreEmpresa === ""} onClick={handleSubmit} className={styles.button}>Quiero mi logo</button>
                 </div>

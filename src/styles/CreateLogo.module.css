@@ -55,3 +55,68 @@
 .button:hover {
     cursor: pointer;
 }
+
+.mainText {
+    width: 45rem;
+}
+
+
+@media (max-width: 1360px) {
+    .mainCreateLogo {
+        /* height: 55rem; */
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 88vw;
+    }
+    
+    .img {
+        margin-top: 3rem;
+        max-width: 17rem;
+    }
+    
+    .title {
+        width: 20rem;
+        text-align: center;
+        font-size: 2.5rem;
+        /* margin-top: 0; */
+        margin-bottom: 0;
+    }
+    
+    .mainText {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    .mainTextButton {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .parragrafh {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+
+    .input {
+        font-size: 15px;
+        height: 45px;
+        width: 18rem;
+    }
+
+    .button {
+        font-size: 15px;
+        /* border-top: 20px; */
+        height: 50px;
+        width: 20rem;
+        left: 2px;
+    }
+
+    .containInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8rem;
+    }
+}
