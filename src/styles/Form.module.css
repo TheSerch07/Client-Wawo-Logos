@@ -137,3 +137,56 @@
 .inputRadio {
     display: none;
 }
+
+@media (max-width: 1000px) {
+    .mainForm {
+        width: 88vw;
+    }
+
+    .childForm {
+        width: 70vw;
+    }
+
+    .input {
+        font-size: 15px;
+        width: 68vw;
+    }
+
+    .p {
+        font-size: 18px
+    }
+
+    .contenText {
+        width: 20rem;
+    }
+
+    .contenTextTwo {
+        width: 20rem;
+    }
+
+    .h1 {
+        
+        font-size: 32px;
+    }
+
+    .buttonTwo {
+        font-size: 18px;
+        width: 68vw;
+        height: 3.5rem;
+    }
+
+    .contentImg {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 88vw;
+        height: 25rem;
+        justify-content: space-evenly;
+    }
+
+    .img {
+        /* border-radius: 1rem 1rem 0 0 ; */
+        max-width: 25vw;
+        /* overflow: hidden; */
+    }
+
+}
