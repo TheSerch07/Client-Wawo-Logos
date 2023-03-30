@@ -23,3 +23,9 @@
         height: auto;
     }
 }
+
+@media (max-width: 392px) {
+    .containerExample {
+        width: 8rem;
+    }   
+}
