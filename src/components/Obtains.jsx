@@ -13,12 +13,12 @@ function Obtains() {
         <div className={styles.mainObtains}>
             <h1 className={styles.title}>¿Qué obtienes?</h1>
             <div className={styles.eachObtain}>
-                <div className={styles.obtain}>
+                <div className={`${styles.obtain} ${styles.obtainResponsive}`}>
                     < Obtain price="Gratis" img={OpcionesLogo} title="4 opciones de logo" paragrah="Recibirás a tu correo 4 opciones aproximadas de ti logo creadas con inteligencia artificial."/>
                     < Obtain price="Gratis" img={BajaResolucion} title="PNGs de baja resolución" paragrah="PNGs de baja resolución tamaño 240x240px. Sin textos (nombre de empresa y eslogan)."/>
                     < Obtain price="Gratis" img={DisenosPersonalizados} title="Diseños personalizados" paragrah="Obten diseños 100% únicos creados específicamente para tu empresa y sus necesidades."/>
                 </div>
-                <div className={styles.obtain}>
+                <div className={`${styles.obtain} ${styles.obtainResponsiveTwo}`}>
                     < Obtain price="Pago" img={AltaCalidad} title="PNG de alta calidad" paragrah="Imagen PNG de alta calidad<br>para usar en tus redes<br>sociales y mucho más."/>
                     < Obtain price="Pago" img={ArchivosEditable} title="Archivos editables" paragrah="Archivos SVG, EPS y AI<br>de tu logo que puedes<br>modificar a tu gusto."/>
                     < Obtain price="Pago" img={TiempoYDinero} title="Ahorro de tiempo y dinero" paragrah="Con nuestra plataforma de IA no tendrás que gastar millones ni esperar meses para tu logo ideal."/>

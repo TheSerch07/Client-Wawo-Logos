@@ -32,3 +32,39 @@
 .img {
     max-width: 13rem;
 }
+
+@media (max-width: 1000px) {
+    .mainObtain {
+        /* flex-wrap: wrap; */
+        margin-bottom: 7rem;
+        height: 22rem;
+        width: 20rem;
+        justify-content: space-between;
+    }
+
+    .divPrice {
+        height: 2rem;
+        width: 6rem;
+    }
+
+    .img {
+        max-width: 10rem;
+    }
+
+    .h2 {
+        width: 20rem;
+        font-size: 1.5rem;
+    }
+
+    .p {
+        margin-top: 0;
+        width: 15rem;
+        font-size: 14px;
+    }
+
+    .containText {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

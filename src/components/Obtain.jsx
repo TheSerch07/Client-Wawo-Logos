@@ -7,8 +7,8 @@ function Obtain({ price, img, title, paragrah }) {
                 {price}
             </div>
             <img className={styles.img} src={img} alt="OpcionesLogo"/>
-            <div>
-                <h2>{title}</h2>
+            <div className={styles.containText}>
+                <h2 className={styles.h2}>{title}</h2>
                 <p className={styles.p} dangerouslySetInnerHTML={{ __html: paragrah }}></p>
             </div>
         </div>
