@@ -1,6 +1,6 @@
 @font-face {
-  font-family: OpenSauseOne;
-  src: url("./styles/OpenSauseOne/OpenSauceOne-Bold.ttf");
+  font-family: OpenSauseOneBold;
+  src: url("../src/styles/OpenSauseOne/OpenSauceOne-Bold.ttf");
 }
 
 #root {
@@ -10,7 +10,7 @@
   max-width: auto;
   /* margin: 0 auto; */
   text-align: center;
-  font-family: OpenSauseOne;
+  font-family: OpenSauseOneBold;
 }
 
 .icon {

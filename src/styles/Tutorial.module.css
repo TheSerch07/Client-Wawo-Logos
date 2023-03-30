@@ -3,6 +3,11 @@
     src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
 }
 
+/* @font-face {
+    font-family: OpenSauseOne;
+    src: url("../styles/OpenSauseOne/OpenSauceOne-Bold.ttf");
+} */
+
 .mainTutorial {
     margin-top: 8rem;
     display: flex;
@@ -23,6 +28,7 @@
 }
 
 .title {
+    /* font-family: OpenSauseOne; */
     font-size: 60px;
 }
 
@@ -39,6 +45,7 @@
 }
 
 .h2 {
+    /* font-family: OpenSauseOne; */
     font-size: 1.78rem;
     margin-bottom: 0px;
 }
