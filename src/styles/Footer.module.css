@@ -26,7 +26,7 @@ a {
     color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 914px) {
     .mainFooter {
         flex-direction: column;
         width: 88vw;

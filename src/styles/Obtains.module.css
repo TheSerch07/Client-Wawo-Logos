@@ -30,7 +30,7 @@
     width: 85vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 914px) {
     .mainObtains {
         /* flex-wrap: wrap; */
         margin-top: 6rem;

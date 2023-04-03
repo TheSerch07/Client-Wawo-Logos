@@ -33,7 +33,7 @@
     max-width: 13rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 914px) {
     .mainObtain {
         /* flex-wrap: wrap; */
         margin-bottom: 7rem;

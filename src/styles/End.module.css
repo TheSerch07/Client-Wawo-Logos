@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 914px) {
     .h1 {
         /* margin-top: 3vw;
         margin-bottom: 0; */

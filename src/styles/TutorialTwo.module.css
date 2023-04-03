@@ -64,7 +64,7 @@
     width: 18rem;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 914px) {
     .mainTutorial {
         margin-top: 0;
     }
