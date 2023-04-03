@@ -5,7 +5,7 @@
     align-items: center;
     background-color: rgb(233, 233, 233);
     border-radius: 2rem;
-    width: 110rem;
+    width: 91.5vw;
     height: 90rem;
 }
 
@@ -22,12 +22,12 @@
     align-items: center;
     background-color: rgb(233, 233, 233);
     height: 33rem;
-    width: 100rem;
+    width: 85vw;
 }
 
 .eachObtain {
     height: 75rem;
-    width: 100rem;
+    width: 85vw;
 }
 
 @media (max-width: 1000px) {
