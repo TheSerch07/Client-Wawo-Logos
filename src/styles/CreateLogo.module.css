@@ -43,15 +43,17 @@
     /* font-size: 18px; */
     font-size: .9vw;
     border-top: 20px;
-    height: 3.37vw;
+    height: 3.58vw;
     border: solid black 1px;
     /* width: 30rem; */
     width: 25vw;
     border-radius: 3vw;
     /* border-radius: 2rem; */
+    box-sizing: border-box;
 }
 
 .button {
+    box-sizing: border-box;
     font-family: OpenSauseOneRegular;
     background: rgb(17, 17, 17);
     color: rgb(255, 255, 1);
@@ -121,7 +123,7 @@
     }
 
     .mainTextButton {
-        width: 20rem;
+        width: 70vw;
         display: flex;
         flex-direction: column;
     }
@@ -133,20 +135,27 @@
 
     .input {
         /* font-size: 3.4vw; */
-        font-size: 15px;
+        /* font-size: 15px; */
+        font-size: 2.8vw;
         height: 45px;
-        padding-left: 2rem;
-        width: 18rem;
-        /* width: 65vw; */
+        /* padding-left: 2rem; */
+        border-radius: 7vw;
+        text-align: center;
+        /* width: 18rem; */
+        width: 72vw;
+        box-sizing: border-box;
     }
 
     .button {
+        box-sizing: border-box;
         font-size: 15px;
         /* border-top: 20px; */
         height: 50px;
-        width: 20.5rem;
-        /* width: 72vw; */
-        left: 2px;
+        /* width: 20.4rem; */
+        width: 72vw;
+        /* left: 2px; */
+        border-radius: 7vw;
+        position: static;
     }
 
     .containInput {
