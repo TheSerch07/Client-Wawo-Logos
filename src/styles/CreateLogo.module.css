@@ -67,7 +67,8 @@
     width: 15vw;
     border-radius: 3vw;
     position: relative;
-    left: -7rem;
+    /* left: -7rem; */
+    left: -6vw;
     z-index: 0;
 }
 
