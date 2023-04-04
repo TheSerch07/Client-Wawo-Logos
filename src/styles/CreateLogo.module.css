@@ -9,6 +9,7 @@
 } */
 
 .mainCreateLogo {
+    box-sizing: border-box;
     display: flex;
     margin-top: 120px;
     background-color: rgb(225, 255, 1);
@@ -99,13 +100,15 @@
 @media (max-width: 914px) {
     .mainCreateLogo {
         /* height: 55rem; */
+        border-radius: 7vw;
         flex-direction: column;
         justify-content: flex-start;
         width: 88vw;
+        height: 170vw;
     }
     
     .img {
-        margin-top: 3rem;
+        margin-top: 8vw;
         width: 55vw;
     }
     
@@ -140,8 +143,8 @@
     .input {
         /* font-size: 3.4vw; */
         /* font-size: 15px; */
-        font-size: 2.8vw;
-        height: 9.3vw;
+        font-size: 3.5vw;
+        height: 12vw;
         /* padding-left: 2rem; */
         border-radius: 7vw;
         text-align: center;
@@ -156,7 +159,7 @@
         font-size: 3.5vw;
         /* border-top: 20px; */
         /* height: 50px; */
-        height: 10vw;
+        height: 13vw;
         /* width: 20.4rem; */
         width: 72vw;
         /* left: 2px; */
@@ -168,14 +171,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 8rem;
+        height: 40vw;
     }
 }
 
 @media (min-width: 480px) and (max-width: 914px) {
     /* Tu código CSS aquí */
     .img {
+        margin-top: 4rem;
         width: 15rem;
+    }
+
+    .mainCreateLogo {
+        height: 48rem;
     }
 
     .mainText {
@@ -238,6 +246,7 @@
 
     .containInput {
         align-items: center;
+        height: 10rem;
     }
   }
 
