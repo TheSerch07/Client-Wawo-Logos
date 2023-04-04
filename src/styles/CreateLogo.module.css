@@ -43,10 +43,12 @@
     /* font-size: 18px; */
     font-size: .9vw;
     border-top: 20px;
-    height: 3.3vw;
+    height: 3.37vw;
+    border: solid black 1px;
     /* width: 30rem; */
     width: 25vw;
-    border-radius: 2rem;
+    border-radius: 3vw;
+    /* border-radius: 2rem; */
 }
 
 .button {
@@ -57,10 +59,11 @@
     font-size: 1.04vw;
     border-top: 20px;
     /* height: 65px; */
-    height: 3.5vw;
+    height: 3.58vw;
+    /* border: none; */
     /* width: 18rem; */
     width: 15vw;
-    border-radius: 2rem;
+    border-radius: 3vw;
     position: relative;
     left: -7rem;
     z-index: 0;
@@ -75,7 +78,7 @@
 }
 
 .img {
-    max-width: 30vw;
+    width: 28vw;
 }
 
 .containInput {
@@ -100,7 +103,7 @@
     
     .img {
         margin-top: 3rem;
-        max-width: 17rem;
+        width: 17rem;
     }
     
     .title {
@@ -129,16 +132,20 @@
     }
 
     .input {
+        /* font-size: 3.4vw; */
         font-size: 15px;
         height: 45px;
+        padding-left: 2rem;
         width: 18rem;
+        /* width: 65vw; */
     }
 
     .button {
         font-size: 15px;
         /* border-top: 20px; */
         height: 50px;
-        width: 20rem;
+        width: 20.5rem;
+        /* width: 72vw; */
         left: 2px;
     }
 
