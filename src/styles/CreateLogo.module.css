@@ -106,13 +106,15 @@
     
     .img {
         margin-top: 3rem;
-        width: 17rem;
+        width: 55vw;
     }
     
     .title {
-        width: 20rem;
+        /* width: 20rem; */
+        width: 70vw;
         text-align: center;
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
+        font-size: 9vw;
         /* margin-top: 0; */
         margin-bottom: 0;
     }
@@ -120,7 +122,8 @@
     .mainText {
         display: flex;
         flex-direction: column;
-        width: 20rem;
+        /* width: 20rem; */
+        width: 70vw;
     }
 
     .mainTextButton {
@@ -130,7 +133,7 @@
     }
     .parragrafh {
         text-align: center;
-        font-size: 18px;
+        font-size: 4vw;
         padding-bottom: 1rem;
     }
 
@@ -138,7 +141,7 @@
         /* font-size: 3.4vw; */
         /* font-size: 15px; */
         font-size: 2.8vw;
-        height: 45px;
+        height: 9.3vw;
         /* padding-left: 2rem; */
         border-radius: 7vw;
         text-align: center;
@@ -149,9 +152,11 @@
 
     .button {
         box-sizing: border-box;
-        font-size: 15px;
+        /* font-size: 15px; */
+        font-size: 3.5vw;
         /* border-top: 20px; */
-        height: 50px;
+        /* height: 50px; */
+        height: 10vw;
         /* width: 20.4rem; */
         width: 72vw;
         /* left: 2px; */
@@ -162,7 +167,77 @@
     .containInput {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 8rem;
     }
 }
+
+@media (min-width: 480px) and (max-width: 914px) {
+    /* Tu código CSS aquí */
+    .img {
+        width: 15rem;
+    }
+
+    .mainText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 20rem; */
+        width: 70vw;
+    }
+
+    .mainTextButton {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .parragrafh {
+        width: 20rem;
+        text-align: center;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+
+    .title {
+        width: 20rem;
+        /* width: 20rem; */
+        /* width: 70vw; */
+        text-align: center;
+        /* font-size: 2.5rem; */
+        font-size: 2.5rem;
+        /* margin-top: 0; */
+        margin-bottom: 0;
+    }
+
+    .input {
+        /* font-size: 3.4vw; */
+        /* font-size: 15px; */
+        font-size: 0.9rem;
+        height: 3rem;
+        /* padding-left: 2rem; */
+        border-radius: 7vw;
+        text-align: center;
+        /* width: 18rem; */
+        width: 21rem;
+        box-sizing: border-box;
+    }
+
+    .button {
+        box-sizing: border-box;
+        /* font-size: 15px; */
+        font-size: 1.1rem;
+        /* border-top: 20px; */
+        /* height: 50px; */
+        height: 3rem;
+        /* width: 20.4rem; */
+        width: 21rem;
+        /* left: 2px; */
+        border-radius: 7vw;
+        position: static;
+    }
+
+    .containInput {
+        align-items: center;
+    }
+  }
+
