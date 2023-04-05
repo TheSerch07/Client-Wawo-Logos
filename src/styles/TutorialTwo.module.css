@@ -4,7 +4,7 @@
 }
 
 .mainTutorial {
-    margin-top: 3rem;
+    margin-top: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,28 +18,28 @@
     height: 29rem;
     /* width: 58rem; */
     width: 48.5vw;
-    border-radius: 25px;
+    border-radius: 1.5vw;
     margin-top: 2rem;
 }
 
 .title {
-    font-size: 60px;
+    font-size: 3.1vw;
 }
 
 .contentH2 {
-    font-size: 1.4rem;
+    font-size: 1.1vw;
     color: #E1FF01;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3.3vw;
+    height: 3.3vw;
     border-radius: 50px;
     background-color: rgb(17, 17, 17);
 }
 
 .h2 {
-    font-size: 1.78rem;
+    font-size: 1.5vw;
     margin-bottom: 0px;
 }
 
@@ -47,21 +47,21 @@
     display: flex;
     text-align: right;
     flex-direction: column;
-    width: 23rem;
-    height: 20rem;
-    font-size: 18px;
+    width: 18vw;
+    height: 16vw;
+    font-size: .95vw;
     align-items: flex-end;
     justify-content: space-around;
 }
 
 .p {
     font-family: OpenSauseOneRegular;
-    line-height: 1.6rem;
+    line-height: 1.3vw;
     margin-top: 0px;
 }
 
 .img {
-    width: 18rem;
+    width: 15vw;
 }
 
 @media (max-width: 914px) {
