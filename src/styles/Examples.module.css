@@ -23,18 +23,18 @@
 
 @media (max-width: 914px) {
     .mainExamples {
-        margin-top: 5rem;
+        margin-top: 25vw;
     }
 
     .title {
-        width: 40vw;
-        font-size: 40px;
-        margin-bottom: 1rem;
+        width: 50vw;
+        font-size: 9vw;
+        margin-bottom: 5vw;
     }
 
     .containerExample {
         width: 90vw;
-        height: 1000px;
+        height: 230vw;
 
     }
 }

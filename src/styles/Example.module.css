@@ -18,8 +18,14 @@
 
 @media (max-width: 914px) {
     .containerExample {
-        width: 11rem;
-        height: auto;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .img {
+        border-radius: 5vw;
+        width: 40vw;
+        height: 40vw;
     }
 }
 
