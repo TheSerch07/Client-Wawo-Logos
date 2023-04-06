@@ -1,20 +1,21 @@
 .mainExamples {
-    margin-top: 16rem;
+    margin-top: 13vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .title {
-    font-size: 60px;
-    margin-bottom: 5rem;
+    font-size: 3.1vw;
+    margin-bottom: 4vw;
 }
 
 .containerExample {
     display: flex;
     /* background-color: blue; */
-    width: 80rem;
-    height: 40rem;
+    /* width: 80rem; */
+    width: 68vw;
+    height: 30vw;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
