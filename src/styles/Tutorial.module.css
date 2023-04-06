@@ -175,6 +175,7 @@
         /* background-color: red; */
         width: 21rem;
         height: 10.5rem;
+        padding-left: 5vw;
     }
 
     .p {
@@ -186,6 +187,7 @@
 
     .contentImg {
         width: 20rem;
+        padding-left: 5vw;
     }
 
     .h2 {
