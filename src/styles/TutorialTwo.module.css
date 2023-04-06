@@ -72,42 +72,57 @@
     .childTutorial {
         flex-direction: column;
         align-items: flex-end;
-        padding-right: 2rem;
+        padding-right: 7vw;
         /* width: 58rem; */
-        margin-top: 1.5rem;
         width: 80.3vw;
+        height: 100vw;
+        border-radius: 7vw;
         position: relative;
+        margin-top: 5vw;
+    }
+
+    .title {
+        margin-top: .1vw;
+        width: 45vw;
     }
 
     .img {
-        margin-top: 2rem;
+        margin-top: .1vw;
         /* position: absolute; */
-        max-width: 12rem;
+        width: 45vw;
         /* : -20px */
     }
     .contentH2 {
         position: absolute;
         left: 7vw;
-        top: 1.5rem;
-        font-size: 1.1rem;
-        width: 3rem;
-        height: 3rem;
+        top: 6vw;
+        font-size: 4vw;
+        width: 11vw;
+        height: 11vw;
     }
 
     .mainText {
         width: 70vw;
         justify-content: center;
+        height: 35vw;
         /* height: 1rem; */
         /* text-align: center;s */
     }
 
     .p {
-        width: 20rem;
-        font-size: 14px;
+        box-sizing: border-box;
+        font-size: 3.2vw;
+        line-height: 4vw;
         margin-top: 15px;
+        height: 10vw;
+    }
+
+    .contentImg {
+
     }
 
     .h2 {
-        font-size: 1.5rem;
+        font-size: 5.5vw;
+        width: 65vw;
     }
 }
