@@ -35,15 +35,17 @@
 @media (max-width: 914px) {
     .mainObtains {
         /* flex-wrap: wrap; */
-        margin-top: 6rem;
+        margin-top: 18vw;
         width: 88vw;
-        height: 3620px;
+        /* height: 3620px; */
+        height: 770vw;
+        border-radius: 7vw;
     }
     
     .title {
-        font-size: 40px;
-        margin-top: 8rem;
-        margin-bottom: 5rem;
+        font-size: 9vw;
+        margin-top: 15vw;
+        margin-bottom: 20vw;
     }
     
     .eachObtain {
@@ -51,8 +53,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 70vw;
-        height: 3620px;
-        /* flex-wrap: wrap; */
+        height: 770vw;
     }
 
     .obtain {
@@ -60,20 +61,20 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-between;
-        /* height: 5000px; */
-        
     }
 
     .obtainResponsive {
         display: flex;
         /* align-content: space-between; */
         /* width: 70vw; */
-        height: 1400px;
+        /* height: 1400px; */
+        height: 300vw;
     }
 
     .obtainResponsiveTwo {
         display: flex;
         /* align-content: space-between; */
-        height: 1866px;
+        /* height: 1866px; */
+        height: 390vw;
     }
 }

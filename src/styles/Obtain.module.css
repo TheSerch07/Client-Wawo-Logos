@@ -44,30 +44,37 @@
 @media (max-width: 914px) {
     .mainObtain {
         /* flex-wrap: wrap; */
-        margin-bottom: 7rem;
-        height: 22rem;
-        width: 20rem;
+        /* margin-bottom: 7rem; */
+        margin-bottom: 20vw;
+        /* background-color: black; */
+        height: 72vw;
+        width: 65vw;
         justify-content: space-between;
     }
 
     .divPrice {
-        height: 2rem;
-        width: 6rem;
+        height: 7vw;
+        width: 20vw;
+        border-radius: 20vw;
+        font-size: 3vw;
     }
 
     .img {
-        max-width: 10rem;
+        width: 30vw;
+        max-height: 27vw;
     }
 
     .h2 {
-        width: 20rem;
-        font-size: 1.5rem;
+        /* background-color: black; */
+        width: 65vw;
+        /* font-size: 1.5rem; */
+        font-size: 5.5vw;
     }
 
     .p {
         margin-top: 0;
-        width: 15rem;
-        font-size: 14px;
+        width: 50vw;
+        font-size: 3vw;
     }
 
     .containText {
@@ -75,4 +82,8 @@
         align-items: center;
         flex-direction: column;
     }
+}
+
+@media (min-width: 480px) and (max-width: 914px) {
+    
 }
