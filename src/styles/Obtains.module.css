@@ -1,18 +1,19 @@
 .mainObtains {
-    margin-top: 10rem;
+    margin-top: 8.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(233, 233, 233);
-    border-radius: 2rem;
+    border-radius: 3vw;
     width: 91.5vw;
-    height: 90rem;
+    /* height: 90rem; */
+    height: 75vw;
 }
 
 .title {
-    font-size: 60px;
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    font-size: 3.1vw;
+    margin-top: 6vw;
+    margin-bottom: 4vw;
 }
 
 .obtain {
@@ -21,12 +22,13 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(233, 233, 233);
-    height: 33rem;
+    height: 28vw;
     width: 85vw;
 }
 
 .eachObtain {
-    height: 75rem;
+    /* background-color: black; */
+    height: 58vw;
     width: 85vw;
 }
 
