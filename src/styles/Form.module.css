@@ -8,6 +8,19 @@
     src: url("../styles/OpenSauseOne/OpenSauceOne-Regular.ttf");
 }
 
+.scaleUpCenter {
+    animation: scaleUpCenter 0.5s;
+  }
+  
+  @keyframes scaleUpCenter {
+    0% {
+      transform: scale(.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 .mainForm {
     display: flex;
     flex-direction: column;
@@ -190,3 +203,4 @@
     }
 
 }
+

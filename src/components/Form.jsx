@@ -17,12 +17,15 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
     const navigate = useNavigate()
     // console.log(action("holi"), "llego la action?")
     const [form, setForm] = useState("")
+    const [selectedLogo, setSelectedLogo] = useState("")
 
     function handleInputChange(e) {
         setForm(e.target.value)
     }
 
     function handleRadioChange(e) {
+        console.log(e.target.value, "el value")
+        setSelectedLogo(e.target.id);
         setForm(e.target.id)
     }
 
@@ -78,35 +81,35 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                         <div className={styles.contenTextTwo}>
                             <h1 className={styles.h1}>{ titulo }</h1>
                             <div className={styles.contentImg}>
-                                <div className={styles.eachChild}>
+                                <div className={`${styles.eachChild} ${selectedLogo === 'minimalista' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="minimalista"/>
                                     <label htmlFor="minimalista">
                                         <img className={styles.img} src={logosAbogadosMontes} alt="LogoMinimalista"/>
                                         <p>Minimalista</p>
                                     </label>
                                 </div >
-                                <div className={styles.eachChild}>
+                                <div className={`${styles.eachChild} ${selectedLogo === 'geometrico' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="geometrico"/>
                                     <label htmlFor="geometrico">
                                         <img className={styles.img} src={logosGaleriaBalance} alt="LogoGeometrico"/>
                                         <p>Geométrico</p>
                                     </label>
                                 </div>
-                                <div className={styles.eachChild}>
+                                <div className={`${styles.eachChild} ${selectedLogo === 'futurista' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="futurista"/>
                                     <label htmlFor="futurista">
                                         <img className={styles.img} src={logosAstraComics} alt="LogoFuturista"/>
                                         <p>Futurista</p>
                                     </label>
                                 </div>
-                                <div className={styles.eachChild}>
+                                <div className={`${styles.eachChild} ${selectedLogo === 'emblema' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="emblema"/>
                                     <label htmlFor="emblema">
                                         <img className={styles.img} src={logosCantoraViche} alt="LogoEmblema"/>
                                         <p>Emblema</p>
                                     </label>
                                 </div>
-                                <div className={styles.eachChild}>
+                                <div className={`${styles.eachChild} ${selectedLogo === 'moderno' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="moderno"/>
                                     <label htmlFor="moderno">
                                         <img className={styles.img} src={logosPrometeo} alt="LogoModerno"/>
