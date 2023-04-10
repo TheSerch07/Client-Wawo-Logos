@@ -4,8 +4,9 @@
 }
 
 .mainFooter {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    /* margin-top: 3rem; */
+    margin-top: 4vw;
+    margin-bottom: 2vw;
     display: flex;
     justify-content: space-around;
     width: 98vw;
@@ -13,12 +14,13 @@
 }
 
 .img {
-    transform: scale(1.1);
+    width: 20vw;
+    /* transform: scale(1.1); */
 }
 
 .p {
     font-family: OpenSauseOneRegular;
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 a {
@@ -28,19 +30,41 @@ a {
 
 @media (max-width: 914px) {
     .mainFooter {
+        margin-top: 10vw;
+        margin-bottom: 5vw;
         flex-direction: column;
         width: 88vw;
         align-items: center;
     }
 
     .img {
-        max-width: 13rem;
-        margin-bottom: 2rem;
+        width: 55vw;
+        margin-bottom: 10vw;
     }
 
     .p {
         margin-top: 0;
+        margin-bottom: 3vw;
+        font-size: 3.3vw;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 914px){
+    .mainFooter {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        width: 88vw;
+        align-items: center;
+    }
+
+    .img {
+        width: 17rem;
+        margin-bottom: 3rem;
+    }
+
+    .p {
         margin-bottom: 1rem;
-        font-size: 15px;
+        font-size: 1rem;
     }
 }
