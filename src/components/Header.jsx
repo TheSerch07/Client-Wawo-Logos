@@ -1,5 +1,6 @@
-import styles from "../styles/Header.module.css"
-import logo from "../assets/Logo.svg"
+import styles from "../styles/Header.module.css";
+import logo from "../assets/Logo.svg";
+import { Link } from "react-router-dom";
 
 function Header({ useStyle }) {
 
@@ -7,7 +8,9 @@ function Header({ useStyle }) {
 
 	return (
         <header className={classes}>
-			<img src={logo} alt="LogoWawo" />
+			<Link to="/">
+				<img className={styles.img} src={logo} alt="LogoWawo" />
+			</Link>
 	    </header>
     )
 }

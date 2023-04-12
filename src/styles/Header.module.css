@@ -28,3 +28,6 @@
 	position: fixed; 
 }
 
+.img:hover {
+	cursor: pointer;
+}
