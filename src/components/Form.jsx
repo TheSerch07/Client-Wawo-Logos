@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
 import styles from "../styles/Form.module.css";
@@ -17,9 +17,11 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
     // console.log(action("holi"), "llego la action?")
     const [form, setForm] = useState("")
     const [selectedLogo, setSelectedLogo] = useState("")
+    const inputRef = useRef(null);
 
     function handleInputChange(e) {
-        setForm(e.target.value)
+        const inputValue = e.target.value
+        setForm(inputValue)
     }
 
     function handleRadioChange(e) {
@@ -29,7 +31,15 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
     }
 
     function handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault();
+        const inputValue = form.trim();
+        if (!inputValue) {
+            inputRef.current.classList.remove(styles.inputError); 
+            setTimeout(() => {
+                inputRef.current.classList.add(styles.inputError);
+            }, 10);
+            return;
+        }
         if (submit) {
             dispatch(action(form))
             fetch("https://sheet.best/api/sheets/6c0dc22f-110d-4949-999d-c468611090f1", {
@@ -74,7 +84,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                             <h1 className={styles.h1}>{ titulo }</h1>
                             <p className={styles.p}>{ parrafo }</p>
                         </div>
-                        <textarea onChange={handleInputChange} className={styles.input} placeholder={placeholder}/>
+                        <textarea ref={inputRef} onChange={handleInputChange} className={styles.input} placeholder={placeholder}/>
                         </>
                      : 
                         <div className={styles.contenTextTwo}>
@@ -118,7 +128,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                             </div>
                         </div>
                 }
-                <button disabled={form === ""} onClick={handleSubmit} className={styles.buttonTwo}>{buttonText} <BiRightArrowAlt size={30}/> </button>
+                <button onClick={handleSubmit} className={styles.buttonTwo}>{buttonText} <BiRightArrowAlt size={30}/> </button>
             </div>
         </div>
     )
