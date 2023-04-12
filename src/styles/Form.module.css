@@ -1,6 +1,11 @@
-@font-face {
-    font-family: OpenSauseOne;
+/* @font-face {
+    font-family: OpenSauseOneBold;
     src: url("./styles/OpenSauseOne/OpenSauceOne-Bold.ttf");
+} */
+
+@font-face {
+    font-family: OpenSauseOneSemibold;
+    src: url("./OpenSauseOne/OpenSauceOne-SemiBold.ttf");
 }
 
 @font-face {
@@ -60,7 +65,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: OpenSauseOne;
+    font-family: OpenSauseOneSemibold;
     background-color: transparent;
     font-size: 18px;
     height: 2rem;

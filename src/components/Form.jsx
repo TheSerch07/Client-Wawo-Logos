@@ -9,7 +9,6 @@ import logosAstraComics from "../assets/Logos-Astra-1.jpg";
 import logosCantoraViche from "../assets/Cantora-V1-03.jpg";
 import logosPrometeo from "../assets/Logos-Prometo-1.jpg"
 import { useNavigate } from "react-router-dom";
-import { setClean } from "../features/form/formSlice";
 
 function Form({buttonText, submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
     const formRedux = useSelector((state) => state.form)
