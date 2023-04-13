@@ -37,7 +37,8 @@
     background-color: rgb(225, 255, 1);
     /* width: 110rem; */
     width: 91.5vw;
-    height: 48rem;
+    /* height: 48rem; */
+    height: 40vw;
     border-radius: 2rem;
     align-items: center;
     justify-content: space-around;
