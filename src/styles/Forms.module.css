@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 914px) {
-    .mainForms {
-        height: 50rem;
-    }
+    /* .mainForms {
+        height: 100vh;
+    } */
 }

@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: rgb(248, 248, 248);
-    width: 110rem;
+    width: 91.5vw;
     height: 40vw;
     border-radius: 2rem;
     align-items: center;
@@ -61,21 +61,23 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50rem;
+    height: 40vw;
     width: 90vw;
 }
 
 .input {
     font-family: OpenSauseOneRegular;
     background: rgb(248, 248, 248);
-    font-size: 18px;
-    width: 45rem;
+    /* font-size: 18px; */
+    font-size: 1vw;
+    /* width: 45rem; */
+    width: 38vw;
     text-align: center;
-    padding-bottom: 10rem ;
-    padding-top: 1rem;
-    /* height: 5rem; */
-    /* vertical-align:center; */
-    border-radius: 1rem;
+    /* padding-bottom: 10rem ; */
+    padding-bottom: 8.5vw;
+    /* padding-top: 1rem; */
+    padding-top: .8vw;
+    border-radius: .8vw;
     resize: none;
     overflow: hidden;
 }
@@ -86,10 +88,14 @@
     align-items: center;
     font-family: OpenSauseOneSemibold;
     background-color: transparent;
-    font-size: 18px;
-    height: 2rem;
-    width: 10rem;
+    /* font-size: 18px; */
+    font-size: 1vw;
+    /* height: 2rem; */
+    height: 2vw;
+    /* width: 10rem; */
+    width: 8.5vw;
     border: 0;
+    /* background-color: blue; */
 }
 
 .buttonTwo {
@@ -99,10 +105,14 @@
     background-color: rgb(17, 17, 17);
     color: #E1FF01;;
     font-family: OpenSauseOneRegular;
-    font-size: 20px;
-    width: 28rem;
-    height: 4rem;
-    border-radius: 2rem;
+    /* font-size: 20px; */
+    font-size: 1.04vw;
+    /* width: 28rem; */
+    width: 23vw;
+    /* height: 4rem; */
+    height: 3.3vw;
+    /* border-radius: 2rem; */
+    border-radius: 2vw;
     border-color: transparent;
 }
 
@@ -115,14 +125,15 @@
 }
 
 .h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 2.6vw;
 }
 
 .p {
     /* text-align: center;
     display: flex; */
     font-family: OpenSauseOneRegular;
-    font-size: 20px;
+    font-size: 1.04vw;
 }
 
 .contenText {
@@ -130,6 +141,9 @@
     flex-direction: column;
     align-items: center;
     width: 45rem;
+    /* background-color: brown; */
+    width: 38vw;
+    height: 11.5vw;
 }
 
 .contenTextTwo {
@@ -141,7 +155,7 @@
 
 .img {
     border-radius: 1rem 1rem 0 0 ;
-    max-width: 13rem;
+    width: 12vw;
     overflow: hidden;
 }
 
@@ -150,7 +164,9 @@
     align-items: center;
     justify-content: space-around;
     width: 90vw;
-    height: 21.3rem;
+    /* background-color: blue; */
+    /* height: 21.3rem; */
+    height: 18vw;
 }
 
 .chlidImg {
@@ -162,9 +178,8 @@
 } */
 
 .eachChild {
-    border-radius: 1rem;
+    border-radius: 1vw;
     background-color: #E1FF01;
-    /* background-color: blueviolet; */
 }
 
 .eachChild:hover, .img:hover {
@@ -178,52 +193,75 @@
 @media (max-width: 914px) {
     .mainForm {
         width: 88vw;
+        height: 170vw;
     }
 
     .childForm {
         width: 70vw;
+        height: 170vw;
     }
 
     .input {
-        font-size: 15px;
+        font-size: 3.5vw;
         width: 68vw;
+        height: 30vw;
+        border-radius: 4vw;
+        padding-top: 3vw;
     }
 
     .p {
-        font-size: 18px
+        font-size: 4vw
     }
 
     .contenText {
-        width: 20rem;
+        width: 68vw;
+        height: 45vw;
+        /* background-color: brown; */
     }
 
     .contenTextTwo {
-        width: 20rem;
+        width: 80vw;
+        /* background-color: aqua; */
     }
 
     .h1 {
-        
-        font-size: 32px;
+        font-size: 7vw;
     }
 
     .buttonTwo {
-        font-size: 18px;
+        font-size: 4vw;
         width: 68vw;
-        height: 3.5rem;
+        height: 12vw;
+        border-radius: 7vw;
+    }
+
+    .button {
+        font-size: 4vw;
+        height: 8vw;
+        width: 30vw;
+        border: 0;
     }
 
     .contentImg {
         /* flex-direction: column; */
         flex-wrap: wrap;
         width: 88vw;
-        height: 25rem;
+        height: 80vw;
         justify-content: space-evenly;
     }
 
     .img {
         /* border-radius: 1rem 1rem 0 0 ; */
-        max-width: 25vw;
+        width: 25vw;
         /* overflow: hidden; */
+    }
+
+    .eachChild {
+        border-radius: 3vw;
+    }
+
+    .pImg {
+        font-size: 3.5vw;
     }
 
 }

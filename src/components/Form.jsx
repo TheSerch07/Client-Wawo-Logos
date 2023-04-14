@@ -94,35 +94,35 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="minimalista"/>
                                     <label htmlFor="minimalista">
                                         <img className={styles.img} src={logosAbogadosMontes} alt="LogoMinimalista"/>
-                                        <p>Minimalista</p>
+                                        <p className={styles.pImg}>Minimalista</p>
                                     </label>
                                 </div >
                                 <div className={`${styles.eachChild} ${selectedLogo === 'geometrico' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="geometrico"/>
                                     <label htmlFor="geometrico">
                                         <img className={styles.img} src={logosGaleriaBalance} alt="LogoGeometrico"/>
-                                        <p>Geométrico</p>
+                                        <p className={styles.pImg}>Geométrico</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'futurista' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="futurista"/>
                                     <label htmlFor="futurista">
                                         <img className={styles.img} src={logosAstraComics} alt="LogoFuturista"/>
-                                        <p>Futurista</p>
+                                        <p className={styles.pImg}>Futurista</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'emblema' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="emblema"/>
                                     <label htmlFor="emblema">
                                         <img className={styles.img} src={logosCantoraViche} alt="LogoEmblema"/>
-                                        <p>Emblema</p>
+                                        <p className={styles.pImg}>Emblema</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'moderno' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="moderno"/>
                                     <label htmlFor="moderno">
                                         <img className={styles.img} src={logosPrometeo} alt="LogoModerno"/>
-                                        <p>Moderno</p>
+                                        <p className={styles.pImg}>Moderno</p>
                                     </label>
                                 </div>
                             </div>
