@@ -10,7 +10,6 @@ import logosCantoraViche from "../assets/Cantora-V1-03.jpg";
 import logosPrometeo from "../assets/Logos-Prometo-1.jpg"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { response } from "../../../../Server/wawo-logos-ai/src/app";
 
 function Form({buttonText, submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
     const formRedux = useSelector((state) => state.form)
@@ -72,7 +71,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
             //nodemailer
 
             axios.post('https://server-wawo-logos-production.up.railway.app/sendEmail', {nombre: formRedux.nombreEmpresa})
-                .then((response) => response.data)
+                .then((res) => res.data)
                 .catch(err => console.log(err))
             
             navigate("/formFinished")
