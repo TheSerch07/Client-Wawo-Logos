@@ -27,7 +27,8 @@
 
 .p {
     font-family: OpenSauseOneRegular;
-    font-size: .9vw;
+    font-size: 1vw;
+    width: 17vw;
 }
 
 .img {
@@ -37,8 +38,14 @@
 
 .h2 {
     /* background-color: aqua; */
-    width: 18vw;
-    font-size: 1.3vw;
+    width: 20vw;
+    font-size: 1.5vw;
+}
+
+.containText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width: 914px) {
@@ -61,7 +68,7 @@
 
     .img {
         width: 30vw;
-        max-height: 27vw;
+        max-height: 25vw;
     }
 
     .h2 {
@@ -73,8 +80,8 @@
 
     .p {
         margin-top: 0;
-        width: 50vw;
-        font-size: 3vw;
+        width: 60vw;
+        font-size: 3.5vw;
     }
 
     .containText {
