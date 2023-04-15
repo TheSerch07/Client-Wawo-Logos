@@ -74,29 +74,6 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
             axios.post('https://server-wawo-logos-production.up.railway.app/sendEmail', {nombre: formRedux.nombreEmpresa})
                 .then((response) => response.data)
                 .catch(err => console.log(err))
-            // fetch('https://server-wawo-logos-production.up.railway.app/sendEmail', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({
-            //         nombre: formRedux.nombreEmpresa
-            //     })
-            //     })
-            //     .then(response => {
-            //     if (!response.ok) {
-            //         throw new Error('Network response was not ok');
-            //     }
-            //     return response.json();
-            //     })
-            //     .then(data => {
-            //     console.log(data);
-            //     alert('Correo enviado correctamente');
-            //     })
-            //     .catch(error => {
-            //     console.error('Error:', error);
-            //     alert('Error al enviar el correo electrónico');
-            //     });
             
             navigate("/formFinished")
         } else {
