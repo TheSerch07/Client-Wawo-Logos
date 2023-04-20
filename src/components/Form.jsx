@@ -70,7 +70,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
 
             //nodemailer
 
-            axios.post('https://server-wawo-logos-production.up.railway.app/sendEmail', {nombre: formRedux.nombreEmpresa})
+            axios.post('https://server-wawo-logos-production.up.railway.app/sendEmail', {nombre: formRedux.nombreEmpresa, cuentanosMas: formRedux.cuentanosMas, palabras: formRedux.palabras, eslogan:formRedux.eslogan, estilos:formRedux.estilos, correo: formRedux.correo})
                 .then((res) => res.data)
                 .catch(err => console.log(err))
             
