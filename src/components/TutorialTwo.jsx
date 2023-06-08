@@ -37,7 +37,6 @@ function TutorialTwo() {
                     </div>
                 </div>
             </div>
-
         }
         </>
     )

@@ -11,7 +11,8 @@ import logosPrometeo from "../assets/Logos-Prometo-1.jpg"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-function Form({buttonText, submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder }){
+function Form({buttonText, submit, action, componenteAnterior, componenteSiguiente, titulo, parrafo, placeholder, buttonBack, optionOne, optionTwo, optionThree, optionFour, optionFive }){
+    const languageRedux = useSelector((state) => state.language)
     const formRedux = useSelector((state) => state.form)
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -84,7 +85,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
     return(
         <div className={styles.mainForm}>
             <div className={styles.childForm}>
-                <button onClick={componenteAnterior} className={styles.button}><BiArrowBack size={30}/> Atrás</button>
+                <button onClick={componenteAnterior} className={styles.button}><BiArrowBack size={30}/> {buttonBack}</button>
                 {parrafo ?
                         <>
                         <div className={styles.contenText}>
@@ -93,7 +94,7 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                         </div>
                         <textarea ref={inputRef} onChange={handleInputChange} className={styles.input} placeholder={placeholder}/>
                         </>
-                     : 
+                : 
                         <div className={styles.contenTextTwo}>
                             <h1 className={styles.h1}>{ titulo }</h1>
                             <div className={styles.contentImg}>
@@ -101,35 +102,35 @@ function Form({buttonText, submit, action, componenteAnterior, componenteSiguien
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="minimalista"/>
                                     <label htmlFor="minimalista">
                                         <img className={styles.img} src={logosAbogadosMontes} alt="LogoMinimalista"/>
-                                        <p className={styles.pImg}>Minimalista</p>
+                                        <p className={styles.pImg}>{optionOne}</p>
                                     </label>
                                 </div >
                                 <div className={`${styles.eachChild} ${selectedLogo === 'geometrico' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="geometrico"/>
                                     <label htmlFor="geometrico">
                                         <img className={styles.img} src={logosGaleriaBalance} alt="LogoGeometrico"/>
-                                        <p className={styles.pImg}>Geométrico</p>
+                                        <p className={styles.pImg}>{optionTwo}</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'futurista' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="futurista"/>
                                     <label htmlFor="futurista">
                                         <img className={styles.img} src={logosAstraComics} alt="LogoFuturista"/>
-                                        <p className={styles.pImg}>Futurista</p>
+                                        <p className={styles.pImg}>{optionThree}</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'emblema' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="emblema"/>
                                     <label htmlFor="emblema">
                                         <img className={styles.img} src={logosCantoraViche} alt="LogoEmblema"/>
-                                        <p className={styles.pImg}>Emblema</p>
+                                        <p className={styles.pImg}>{optionFour}</p>
                                     </label>
                                 </div>
                                 <div className={`${styles.eachChild} ${selectedLogo === 'moderno' ? styles.scaleUpCenter : ''}`}>
                                     <input className={styles.inputRadio} onChange={handleRadioChange} type="radio" name="logos" id="moderno"/>
                                     <label htmlFor="moderno">
                                         <img className={styles.img} src={logosPrometeo} alt="LogoModerno"/>
-                                        <p className={styles.pImg}>Moderno</p>
+                                        <p className={styles.pImg}>{optionFive}</p>
                                     </label>
                                 </div>
                             </div>

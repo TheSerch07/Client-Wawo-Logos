@@ -10,24 +10,49 @@ import LogoSalvadog from "../assets/Logos-Salvadog-1.jpg"
 import LogoScarlato from "../assets/Logos-Scarlatto-1.jpg"
 import LogoColombina from "../assets/Logos-Colombina-1.jpg"
 import LogoCantora2 from "../assets/Cantora-V1-05.jpg"
+import { useSelector } from "react-redux";
 
 function Examples() {
+    const languageRedux = useSelector((state) => state.language)
+    
     return (
-        <div className={styles.mainExamples}>
-            <h1 className={styles.title}>Algunos ejemplos</h1>
-            <div className={styles.containerExample}>
-                <Example img={LogoApolo}/>
-                <Example img={LogoJabonRey}/>
-                <Example img={LogoCantora}/>
-                <Example img={LogoTrueno}/>
-                <Example img={LogoBalance} />
-                <Example img={LogoAguilaRoja} />
-                <Example img={LogoSalvadog} />
-                <Example img={LogoScarlato} />
-                <Example img={LogoColombina} />
-                <Example img={LogoCantora2} />
+        <>
+        {
+            languageRedux.language === "EN" ?
+            <div className={styles.mainExamples}>
+                <h1 className={styles.title}>Some of our logos</h1>
+                <div className={styles.containerExample}>
+                    <Example img={LogoApolo}/>
+                    <Example img={LogoJabonRey}/>
+                    <Example img={LogoCantora}/>
+                    <Example img={LogoTrueno}/>
+                    <Example img={LogoBalance} />
+                    <Example img={LogoAguilaRoja} />
+                    <Example img={LogoSalvadog} />
+                    <Example img={LogoScarlato} />
+                    <Example img={LogoColombina} />
+                    <Example img={LogoCantora2} />
+                </div>
             </div>
-        </div>
+            :
+            <div className={styles.mainExamples}>
+                <h1 className={styles.title}>Algunos ejemplos</h1>
+                <div className={styles.containerExample}>
+                    <Example img={LogoApolo}/>
+                    <Example img={LogoJabonRey}/>
+                    <Example img={LogoCantora}/>
+                    <Example img={LogoTrueno}/>
+                    <Example img={LogoBalance} />
+                    <Example img={LogoAguilaRoja} />
+                    <Example img={LogoSalvadog} />
+                    <Example img={LogoScarlato} />
+                    <Example img={LogoColombina} />
+                    <Example img={LogoCantora2} />
+                </div>
+            </div>
+            
+        }
+        </>
     )
 }
 
